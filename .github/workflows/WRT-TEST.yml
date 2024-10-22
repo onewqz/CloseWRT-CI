@@ -16,11 +16,11 @@ on:
         required: true
         type: choice
         options: [hanwckf/immortalwrt-mt798x, padavanonly/immortalwrt-mt798x, padavanonly/immortalwrt-mt798x-23.05, padavanonly/immortalwrt]
-      BRANCH:
+      #BRANCH:
         #default: 'openwrt-23.05'
-        default: 'openwrt-18.06'
-        required: true
-        type: string
+        #default: 'openwrt-18.06'
+        #required: true
+        #type: string
       ADJUST:
         description: '内存低占用模式，默认关闭。'
         default: 'false'
