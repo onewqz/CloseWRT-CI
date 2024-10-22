@@ -10,7 +10,7 @@ on:
         default: 'MTK-7981'
         required: true
         type: choice
-        options: [MTK-7981, MTK-7986, MT-7621]
+        options: [MTK-7981, MTK-7986, MTK-7621]
       SOURCE:
         default: 'padavanonly/immortalwrt-mt798x-23.05'
         required: true
