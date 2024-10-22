@@ -10,14 +10,15 @@ on:
         default: 'MTK-7981'
         required: true
         type: choice
-        options: [MTK-7981, MTK-7986]
+        options: [MTK-7981, MTK-7986, MT-7621]
       SOURCE:
         default: 'padavanonly/immortalwrt-mt798x-23.05'
         required: true
         type: choice
-        options: [hanwckf/immortalwrt-mt798x, padavanonly/immortalwrt-mt798x, padavanonly/immortalwrt-mt798x-23.05]
+        options: [hanwckf/immortalwrt-mt798x, padavanonly/immortalwrt-mt798x, padavanonly/immortalwrt-mt798x-23.05, padavanonly/immortalwrt]
       BRANCH:
-        default: 'openwrt-23.05'
+        #default: 'openwrt-23.05'
+        default: 'openwrt-18.06'
         required: true
         type: string
       ADJUST:
@@ -53,7 +54,7 @@ jobs:
       #默认WIFI名
       WRT_WIFI: CWRT
       #默认地址
-      WRT_IP: 192.168.10.1
+      WRT_IP: 192.168.1.1
       #默认密码，仅作提示，修改无用
       WRT_PW: 无
       #源码链接
