@@ -18,7 +18,7 @@ on:
         options: [hanwckf/immortalwrt-mt798x, padavanonly/immortalwrt-mt798x, padavanonly/immortalwrt-mt798x-23.05, padavanonly/immortalwrt]
       BRANCH:
         #default: 'openwrt-23.05'
-        default: '18.06'
+        default: 'master'
         required: true
         type: string
       ADJUST:
@@ -60,7 +60,7 @@ jobs:
       #源码链接
       WRT_REPO: https://github.com/${{inputs.SOURCE}}.git
       #源码分支
-      #WRT_BRANCH: ${{inputs.BRANCH}}
+      WRT_BRANCH: ${{inputs.BRANCH}}
       #源码名称
       WRT_SOURCE: ${{inputs.SOURCE}}
       #内存低占用模式
